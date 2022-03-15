@@ -1,7 +1,7 @@
 package test
 
 import (
-	"gorm-dbup/pkg"
+	pkg "github.com/pygzfei/gorm-dbup/pkg"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"testing"
@@ -21,8 +21,7 @@ func TestCanRun(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	migration := pkg.NewMigration("test", "./dbup")
-	err = database.Use(migration)
+	err = database.Use(pkg.NewMigration("test", "./dbup"))
 
 	if err != nil {
 		t.Error(err)

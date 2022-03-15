@@ -2,7 +2,7 @@ package plugins
 
 import (
 	"fmt"
-	"gorm-dbup/internal/utils"
+	"github.com/pygzfei/gorm-dbup/internal/utils"
 	"gorm.io/gorm"
 	"io/ioutil"
 	"strings"
