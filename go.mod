@@ -1,4 +1,4 @@
-module gorm-dbup
+module github.com/pygzfei/gorm-dbup
 
 go 1.18
 
