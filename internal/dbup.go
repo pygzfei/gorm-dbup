@@ -75,6 +75,9 @@ func (m *DBUp) doMigration(db *gorm.DB) (err error) {
 			if err != nil {
 				return err
 			}
+			if len(readFile) <= 0 {
+				continue
+			}
 			requests := strings.Split(string(readFile), ";")
 			for _, request := range requests {
 				q := strings.TrimSpace(request)
