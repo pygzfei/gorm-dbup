@@ -23,15 +23,11 @@ func TestCanRun(t *testing.T) {
 		t.Error(err)
 	}
 
-	err = database.Exec("DROP TABLE IF EXISTS `migration_update`").Error
-
-	if err != nil {
+	if database.Exec("DROP TABLE IF EXISTS `migration_update`").Error != nil {
 		t.Error(err)
 	}
 
-	err = database.Use(pkg.NewMigration("test1", "./dbup1"))
-
-	if err != nil {
+	if database.Use(pkg.NewMigration("test1", "./dbup1")) != nil {
 		t.Error(err)
 	}
 
@@ -69,9 +65,7 @@ func TestCanAddNewMigrationUpdate(t *testing.T) {
 		t.Error(err)
 	}
 
-	err = database.Use(pkg.NewMigration("test1", "./dbup2"))
-
-	if err != nil {
+	if database.Use(pkg.NewMigration("test1", "./dbup2")) != nil {
 		t.Error(err)
 	}
 
