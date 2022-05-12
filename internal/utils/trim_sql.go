@@ -36,6 +36,7 @@ func getPreNotZeroCount(ch byte) int {
 	return i
 }
 
+// getCharSafe 获取字符串中的字符
 func getCharSafe(s []byte, rangeEnd int, pos int) byte {
 	if pos < rangeEnd {
 		return s[pos]
