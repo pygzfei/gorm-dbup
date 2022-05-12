@@ -1,3 +1,8 @@
+[![Build Status](https://github.com/pygzfei/gorm-dbup/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/pygzfei/gorm-dbup/actions?query=branch%3Amaster)
+[![doc](https://img.shields.io/badge/go.dev-doc-007d9c?style=flat-square&logo=read-the-docs)](https://pkg.go.dev/github.com/pygzfei/gorm-dbup)
+[![codecov](https://codecov.io/gh/pygzfei/gorm-dbup/branch/main/graph/badge.svg?token=RSY21OLN2B)](https://codecov.io/gh/pygzfei/gorm-dbup)
+[![Release](https://img.shields.io/github/v/release/pygzfei/gorm-dbup.svg?style=flat-square)](https://github.com/pygzfei/gorm-dbup/releases)
+![](https://img.shields.io/badge/license-MIT-green)
 ### GORM DBup
 
 ## Install
